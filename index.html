@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Builders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/w3-js/1.8.0/w3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Respondent:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .parallax-bg1 {
+            background-image: url('https://wallpapercave.com/wp/wp3771557.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .parallax-bg2 {
+            background-image: url('https://wallpapercave.com/wp/wp4515262.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-900 text-white shadow-md z-50">
+        <nav class="container mx-auto flex items-center p-4">
+            <!-- Brand Name (Miami Builders) on the Left -->
+            <div class="text-2xl font-bold">
+                Miami Builders
+            </div>
+    
+            <!-- Navigation Links in the Center -->
+            <ul class="flex space-x-5 flex-grow justify-center">
+                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <!-- Home Section with Parallax -->
+    <section id="home" class="parallax-bg1 flex flex-col justify-center items-center text-center text-white">
+        <h1 class="italic text-4xl md:text-7xl font-bold text-white drop-shadow-[0_0_10px_purple]">
+            Welcome to Miami Builders
+          </h1>          
+        <p class="mt-4 text-lg md:text-3xl">"One stop solution for all your housing needs."</p>
+        <a href="contact.html"><button class="mt-8 px-6 py-3 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition">Learn More</button></a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6">About</h2>
+            <p class="text-gray-700 leading-relaxed text-xl">
+                We are the leading real estate agency in the country as we provide housing for everyone be it someone from middle class looking for affordable housing or be it someone from upper class looking for luxorious and lavish properties.
+            </p>
+        </div>
+    </section>
+
+    <!-- Parallax Background 2 -->
+    <section class="parallax-bg2"></section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 shadow-md rounded-lg transform hover:scale-105 transition">
+                    <img src="building.webp" alt="Dreamland Society" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-4">Dreamland Society</h3>
+                    <p class="text-gray-600 mt-2 text-xl">Located in Tampa, Florida. This society provides luxury at a budget for everyone who wants to live the American dream to the fullest.</p>
+                </div>
+                <div class="bg-gray-50 p-6 shadow-md rounded-lg transform hover:scale-105 transition">
+                    <img src="building2.jpg" alt="Project 2" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-4">Maryneira Heights</h3>
+                    <p class="text-gray-600 mt-2 text-xl">This midrise society situated in Ocean Drive, Miami is perfect for everyone who works near the commercial district.</p>
+                </div>
+                <div class="bg-gray-50 p-6 shadow-md rounded-lg transform hover:scale-105 transition">
+                    <img src="building3.webp" alt="Project 2" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-4">Gladiator Housing</h3>
+                    <p class="text-gray-600 mt-2 text-xl">Located in uptown Miami. Perfect for people working in the business district.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+            <p class="mb-8">Have questions or feedback? Fill out the form below, and we’ll get back to you shortly!</p>
+            <form 
+                action="https://formsubmit.co/6955b4f107c90e87ed244af9330f4d76" 
+                method="POST" 
+                class="max-w-xl mx-auto">
+                
+                <!-- Hidden inputs for configuration -->
+                <input type="hidden" name="_next" value="https://miamibuilders.netlify.app/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+                
+                <!-- Email input -->
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required 
+                    class="w-full mb-4 p-3 rounded-lg border border-gray-400 text-gray-900 focus:ring focus:ring-red-500">
+                
+                <!-- Message textarea -->
+                <textarea 
+                    name="message" 
+                    placeholder="Write your message here..." 
+                    required 
+                    class="w-full h-32 mb-4 p-3 rounded-lg border border-gray-400 text-gray-900 focus:ring focus:ring-red-500 resize-none"></textarea>
+                
+                <!-- Submit button -->
+                <button 
+                    type="submit" 
+                    class="w-full py-3 bg-red-500 rounded-lg shadow-md hover:bg-red-600 transition text-white font-bold">
+                    Send Message
+                </button>
+            </form>
+            <footer class="mt-10 text-gray-500">&copy; 2024 Miami Builders Inc | All Rights Reserved</footer>
+        </div>
+    </section>    
+</body>
+</html>

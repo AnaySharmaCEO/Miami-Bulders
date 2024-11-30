@@ -1,0 +1,75 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white py-6">
+        <div class="flex items-center justify-between container mx-auto">
+            <div class="text-left ml-10">
+                <a href="index.html">
+                    <button class="px-6 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition">
+                        Home
+                    </button>
+                </a>
+            </div>
+            
+            <!-- Contact Us Title in the center -->
+            <div class="text-center flex-1 mr-12 ">
+                <h1 class="text-3xl font-bold">Contact Us</h1>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contact Form Section -->
+    <main class="container mx-auto py-20">
+        <div class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-900">Get in Touch</h2>
+            <p class="mb-8 text-center text-gray-600">Have questions or feedback? Fill out the form below, and we’ll get back to you shortly!</p>
+            <form 
+                action="https://formsubmit.co/6955b4f107c90e87ed244af9330f4d76" 
+                method="POST" 
+                class="space-y-6">
+
+                <!-- Hidden inputs for configuration -->
+                <input type="hidden" name="_next" value="https://miamibuilders.netlify.app/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Contact Form Submission">
+
+                <!-- Email input -->
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required 
+                    class="w-full mb-4 p-3 rounded-lg border border-gray-400 text-gray-900 focus:ring focus:ring-red-500">
+
+                <!-- Message textarea -->
+                <textarea 
+                    name="message" 
+                    placeholder="Write your message here..." 
+                    required 
+                    class="w-full h-32 mb-4 p-3 rounded-lg border border-gray-400 text-gray-900 focus:ring focus:ring-red-500 resize-none"></textarea>
+
+                <!-- Submit button -->
+                <button 
+                    type="submit" 
+                    class="w-full py-3 bg-red-500 rounded-lg shadow-md hover:bg-red-600 transition text-white font-bold">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </main>
+    <!-- Footer Section (Optional) -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
